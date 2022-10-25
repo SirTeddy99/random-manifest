@@ -608,7 +608,7 @@ data:
 
 
 
-        <VirtualHost *:80>
+    <VirtualHost *:80>
         ServerAdmin webmaster@dummy-host.example.com
         DocumentRoot "/usr/local/apache2/docs/dummy-host.example.com"
         ServerName dummy-host.example.com
