@@ -34,7 +34,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-service
+  name: nginx-conf
 spec:
   type: NodePort
   selector:
