@@ -1,0 +1,27 @@
+apiVersion: v1 
+kind: Pod 
+metadata: 
+  name: beetroot 
+  labels: 
+    app.kubernetes.io/name: beetrootApp 
+spec: 
+  containers: 
+    - name: beetroot 
+      image: torer99/grp10-beetroot:latest
+      ports: 
+        - containerPort: 8080
+          name: beetport
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: beetroot-service
+spec:
+  selector:
+    app.kubernetes.io/name: beetrootApp
+  ports:
+  - name: beetport
+    protocol: TCP
+    port: 8080
+    targetPort: beetport
+
