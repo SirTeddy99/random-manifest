@@ -19,6 +19,7 @@ metadata:
 spec:
   selector:
     app.kubernetes.io/name: beetrootApp
+  clusterIP: 10.106.157.89
   ports:
   - name: beetport
     protocol: TCP

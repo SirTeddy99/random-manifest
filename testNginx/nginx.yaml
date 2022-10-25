@@ -57,6 +57,6 @@ data:
     server_name www.localhost;
 
     location / {
-      proxy_pass http://192.168.228.98:8080/;
+      proxy_pass http://10.106.157.89:8080/;
       } 
     }
