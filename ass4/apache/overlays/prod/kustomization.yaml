@@ -1,0 +1,17 @@
+bases:
+  - ../../base
+
+namePrefix: prod-
+
+patches:
+  - path: service.yaml
+    target:
+      name: apache-service
+      namespace: default
+      kind: Service
+  
+configMapGenerator:
+  - name: index-html
+    files:
+      - index.html
+
