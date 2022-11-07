@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: production
+kind: Deployment
 metadata:
   name: apache-production
   labels:
@@ -43,7 +43,7 @@ spec:
   ports:
     - port: 80
       targetPort: 80
-      nodePort: 30088
+      nodePort: 30087
 ---
 apiVersion: v1
 kind: ConfigMap
