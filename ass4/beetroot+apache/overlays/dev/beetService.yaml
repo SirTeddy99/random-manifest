@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: beetroot-service
+spec:
+  selector:
+    app: beetroot
+  clusterIP: 10.106.157.89
+  ports:
+  - name: beetport
+    protocol: TCP
+    port: 8080
+    targetPort: beetport

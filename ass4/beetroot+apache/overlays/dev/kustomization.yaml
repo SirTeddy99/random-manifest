@@ -1,0 +1,14 @@
+bases:
+  - ../../base
+
+namePrefix: dev-
+
+resources:
+    - beetDeployment.yaml
+    - beetService.yaml
+    - apacheService.yaml
+
+configMapGenerator:
+  - name: httpd-conf
+    files:
+      - httpd.conf
